@@ -1,7 +1,7 @@
 #import os
 
 class Data:
-    test_id = 31
+    test_id = 71
     USERNAME = f"pytest{test_id}"
     EMAIL = f"pytest{test_id}@mail.ru"
     PASSWORD = f"pytest{test_id}password"

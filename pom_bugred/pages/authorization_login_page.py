@@ -1,3 +1,4 @@
+from pages import authorization_login_page
 import allure
 from base.base_page import BasePage
 from config.links import Links

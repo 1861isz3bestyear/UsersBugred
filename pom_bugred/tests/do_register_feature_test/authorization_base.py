@@ -1,4 +1,3 @@
-
 import allure
 import pytest
 from base.base_test import BaseTest
@@ -36,14 +35,15 @@ class TestAuthorizationBase(BaseTest):
     def enter_empty_password(self):
         self.authorization_login_page.input_password(self.data.EMTY_DATA)
 
-    def check_authorization_success(self):
+    def press_registration_button(self):
         self.authorization_login_page.press_registration_button()
+
+    def check_authorization_success(self):
         self.users_page.is_openned()
         self.users_page.click_authorized_user_toggle()
 
 
     def check_authorization_fail(self):
-        self.authorization_login_page.press_registration_button()
         self.authorization_login_page.is_openned()
 
 #НАПИСАТЬ ПРОВЕРКУ!!!!!!!!!!!!!!!!!!

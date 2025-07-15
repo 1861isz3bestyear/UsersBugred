@@ -1,6 +1,4 @@
-import pytest
 import allure
-
 from authorization_base import TestAuthorizationBase
 
 
@@ -12,4 +10,5 @@ class TestAuthorizationSuccess(TestAuthorizationBase):
         self.enter_username()
         self.enter_email()
         self.enter_password()
+        self.press_registration_button()
         self.check_authorization_success()
