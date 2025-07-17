@@ -2,7 +2,7 @@ import allure
 from authorization_base import TestAuthorizationBase
 
 class TestAuthorizationFail_5(TestAuthorizationBase):
-    @allure.title("Register new failed user. Email is busy. Username and password are valid")
+    @allure.title("Register new failed user. Every parameter is invalid")
     @allure.severity("Critical")
     def test_failed_authorization_5(self):
         self.execute_authorization_preconditions()
